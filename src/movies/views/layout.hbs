@@ -12,45 +12,48 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 </head>
 <body>
-    <header class="py-3 mb-3 border-bottom">
-        <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
-            <a 
-                href="/movies"
-                class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
-                <img 
-                    class="bi me-2" 
-                    src="images/logo.png"
-                    alt="A clapperboard."
-                    width="32" 
-                    height="32" />
-            </a>
-            <div class="d-flex align-items-center">
-                <form 
-                    class="w-100 me-3" 
-                    method="get" 
-                    action="/movies" 
-                    role="search">
-                    <input
-                        type="search"
-                        name="director"
-                        class="form-control"
-                        placeholder="Search movies by director..."/>
-                </form>
-                <div class="flex-shrink-0">
-                    <a href="https://github.com/ishanpranav"
-                       class="d-block link-body-emphasis text-decoration-none">
-                        <img
-                            src="https://github.com/ishanpranav.png"
-                            alt="ishanpranav"
-                            width="32"
-                            height="32"
-                            class="rounded-circle"/>
-                    </a>
+    <div class="col-lg-8 mx-auto p-4 py-md-5">
+        <header class="py-3 mb-3 border-bottom">
+            <div
+                class="container-fluid d-grid gap-3 align-items-center"
+                style="grid-template-columns: 1fr 2fr;">
+                <a 
+                    href="/movies"
+                    class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+                    <img 
+                        class="bi me-2" 
+                        src="images/logo.png"
+                        alt="A clapperboard."
+                        width="32" 
+                        height="32" />    
+                    <span class="fs-4">Movies</span>
+                </a>   
+                <div class="d-flex align-items-center">
+                    <form 
+                        class="w-100 me-3" 
+                        method="get" 
+                        action="/movies" 
+                        role="search">
+                        <input
+                            type="search"
+                            name="director"
+                            class="form-control"
+                            placeholder="Search movies by director..."/>
+                    </form>
+                    <div class="flex-shrink-0">
+                        <a href="https://github.com/ishanpranav"
+                        class="d-block link-body-emphasis text-decoration-none">
+                            <img
+                                src="https://github.com/ishanpranav.png"
+                                alt="ishanpranav"
+                                width="32"
+                                height="32"
+                                class="rounded-circle"/>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <div class="col-lg-8 mx-auto p-4 py-md-5">
+        </header>
         <main>{{{ body }}}</main>
         <footer class="pt-5 my-5 text-body-secondary border-top small">
             <span>

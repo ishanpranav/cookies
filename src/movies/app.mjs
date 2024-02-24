@@ -18,6 +18,7 @@ express()
     .use(express.static(bootstrapPath))
     .use(express.static(publicPath))
     .set('view engine', 'hbs')
+    .get('/', (_, response) => response.redirect('/movies'))
     .get('/movies', async (request, response) => {
         let query;
 
@@ -35,4 +36,4 @@ express()
             response.status(500).send();
         }
     })
-    .listen(process.env.PORT ?? 3000);
+    .listen(process.env.PORT ?? 3000, process.env.HOSTNAME);
