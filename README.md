@@ -16,11 +16,11 @@ session information.
 
 This is a database application used to store a list of movies.
 
-# License
+## License
 
 This repository is licensed with the [MIT](LICENSE.txt) license.
 
-# Attribution
+## Attribution
 
 The logo for this project was designed by
 [Freepik on Flaticon](https://www.flaticon.com/free-icons/cinema). Layouts and

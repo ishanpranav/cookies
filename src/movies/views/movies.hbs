@@ -4,18 +4,32 @@
 
 {{#if director}}
 <div class="pb-3 text-body-secondary border-bottom small">
-    {{#unless foundData.length}}
-    <span>No results for movies directed by {{ director }}.</span>
-    {{/unless}}
+    <span>
+        {{#if foundData.length}}
+        Showing only movies directed by {{ director }}.
+        {{else}}
+        No results for movies directed by {{ director }}.
+        {{/if}}
 
-    {{#if foundData.length}}
-    <span>Showing only movies directed by {{ director }}.</span>
-    {{/if}}
-
-    <span>Click</span>
+        Click
+    </span>
     <a class="text-decoration-none" href="/movies">here</a>
     <span>to show all movies.</span>
 </div>
+{{else}}
+{{#if added}}
+<div class="pb-3 text-body-secondary border-bottom small">
+    {{#if foundData.length}}
+    <span>Showing only movies that you've added recently. Click</span>
+    <a class="text-decoration-none" href="/movies">here</a>
+    <span>to show all movies.</span>
+    {{else}}
+    <span>You haven't added any movies yet. Click</span>
+    <a class="text-decoration-none" href="/movies-add">here</a>
+    <span>to add one now.</span>
+    {{/if}}
+</div>
+{{/if}}
 {{/if}}
 
 {{#if foundData.length}}
@@ -38,9 +52,3 @@
     </tbody>
 </table>
 {{/if}}
-
-<div class="pt-3 text-body-secondary small">
-<span>Didn't find what you're looking for? Click</span>
-<a class="text-decoration-none" href="/movies-add">here</a>
-</span>to add a movie.</span>
-</div>

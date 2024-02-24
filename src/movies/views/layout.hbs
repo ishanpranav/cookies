@@ -37,10 +37,10 @@
                         width="32" 
                         height="32" />    
                     <span class="fs-4">Movies</span>
-                </a>   
+                </a>
                 <div class="d-flex align-items-center">
                     <form 
-                        class="w-100 me-3" 
+                        class="me-3 w-100" 
                         method="get" 
                         action="/movies" 
                         role="search">
@@ -65,24 +65,47 @@
             </div>
         </header>
         <main>{{{ body }}}</main>
-        <footer class="pt-4 my-3 text-body-secondary border-top small">
-            <span>
-                Copyright &copy; 2024 Ishan Pranav. Licensed under the MIT
-                license.
-            </span>
-            <br/>
-            <span>The logo for this project was designed by </span>
-            <a
-                class="text-decoration-none"
-                href="https://www.flaticon.com/free-icons/cinema"
-                target="_blank">
-                Freepik on Flaticon.</a>
-            <span>Layouts and styles were provided by </span>
-            <a
-                class="text-decoration-none"
-                href="(https://getbootstrap.com"
-                target="_blank">Bootstrap.</a>
+        <footer class="py-3 my-4 small">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item">
+                    <a
+                        class="nav-link px-2 text-body-secondary"
+                        href="/movies">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link px-2 text-body-secondary"
+                        href="/movies-add">
+                        Add a movie
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a 
+                        class="nav-link px-2 text-body-secondary"
+                        href="/mymovies">
+                        Your movies
+                    </a>
+                </li>
+            </ul>
+            <p class="text-center text-body-secondary">
+                <span>
+                    Copyright &copy; 2024 Ishan Pranav. Licensed under the MIT
+                    license.
+                </span>
+                <br/>
+                <span>The logo for this project was designed by </span>
+                <a
+                    class="text-decoration-none"
+                    href="https://www.flaticon.com/free-icons/cinema"
+                    target="_blank">
+                    Freepik on Flaticon.</a>
+                <span>Layouts and styles provided by </span>
+                <a
+                    class="text-decoration-none"
+                    href="(https://getbootstrap.com"
+                    target="_blank">Bootstrap.</a></p>
         </footer>
-    </div>
 </body>
 </html>
