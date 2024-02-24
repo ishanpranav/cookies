@@ -19,9 +19,16 @@ express()
     .use(express.static(publicPath))
     .set('view engine', 'hbs')
     .get('/movies', async (request, response) => {
+        let query;
+
+        if (request.query.director) {
+            query = { director: request.query.director };
+        }
+
         try {
             response.render('movies', {
-                foundData: await Movie.find()
+                director: request.query.director,
+                foundData: await Movie.find(query)
             });
         } catch (ex) {
             console.log(ex);

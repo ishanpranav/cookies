@@ -2,12 +2,28 @@
 {{!-- Copyright (c) 2024 Ishan Pranav --}}
 {{!-- Licensed under the MIT License. --}}
 
-<table>
+{{#if director}}
+    <div class="pb-3 text-body-secondary border-bottom small">
+        {{#unless foundData.length}}
+        <span>No results for movies directed by {{ director }}.</span>
+        {{/unless}}
+
+        {{#if foundData.length}}
+        <span>Showing only movies directed by {{ director }}.</span>
+        {{/if}}
+
+        <span>Click</span>
+        <a class="text-decoration-none" href="/movies">here</a>
+        <span>to show all movies.</span>
+    </div>
+{{/if}}
+
+<table class="table">
     <thead>
         <tr>
-            <th>Year</th>
-            <th>Title</th>
-            <th>Director</th>
+            <th scope="col">Year</th>
+            <th scope="col">Title</th>
+            <th scope="col">Director</th>
         </tr>
     </thead>
     <tbody>

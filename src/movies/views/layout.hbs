@@ -15,7 +15,7 @@
     <header class="py-3 mb-3 border-bottom">
         <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
             <a 
-                href="#"
+                href="/movies"
                 class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
                 <img 
                     class="bi me-2" 
@@ -25,11 +25,16 @@
                     height="32" />
             </a>
             <div class="d-flex align-items-center">
-                <form class="w-100 me-3" role="search">
+                <form 
+                    class="w-100 me-3" 
+                    method="get" 
+                    action="/movies" 
+                    role="search">
                     <input
                         type="search"
+                        name="director"
                         class="form-control"
-                        placeholder="Search..."/>
+                        placeholder="Search movies by director..."/>
                 </form>
                 <div class="flex-shrink-0">
                     <a href="https://github.com/ishanpranav"
@@ -48,17 +53,22 @@
     <div class="col-lg-8 mx-auto p-4 py-md-5">
         <main>{{{ body }}}</main>
         <footer class="pt-5 my-5 text-body-secondary border-top small">
-            <span>Copyright &copy; 2024 Ishan Pranav</span>
-            <br/>
-            <span>Licensed under the MIT license.</span>
+            <span>
+                Copyright &copy; 2024 Ishan Pranav. Licensed under the MIT
+                license.
+            </span>
             <br/>
             <span>The logo for this project was designed by </span>
             <a
+                class="text-decoration-none"
                 href="https://www.flaticon.com/free-icons/cinema"
                 target="_blank">
                 Freepik on Flaticon.</a>
             <span>Layouts and styles were provided by </span>
-            <a href="(https://getbootstrap.com" target="_blank">Bootstrap.</a>
+            <a
+                class="text-decoration-none"
+                href="(https://getbootstrap.com"
+                target="_blank">Bootstrap.</a>
         </footer>
     </div>
 </body>
