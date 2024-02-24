@@ -1,3 +1,7 @@
+// app.mjs
+// Copyright (c) 2024 Ishan Pranav
+// Licensed under the MIT license.
+
 import express from 'express';
 import { parseCookies, manageSession } from './cookied.mjs';
 import colorOptions from './colors.mjs';

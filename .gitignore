@@ -1,0 +1,4 @@
+# Licensed under the MIT License.
+
+node_modules/
+.env

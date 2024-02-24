@@ -1,0 +1,26 @@
+{
+  "name": "homework05-ishanpranav",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --fix src/cookied/*.mjs src/movies/*.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishanpranav/cookies.git"
+  },
+  "author": "Ishan Pranav",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ishanpranav/cookies/issues"
+  },
+  "homepage": "https://github.com/ishanpranav/cookies#readme",
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

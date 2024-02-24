@@ -1,47 +1,21 @@
+{{!-- layout.hbs --}}
+{{!-- Copyright (c) 2024 Ishan Pranav --}}
+{{!-- Licensed under the MIT License. --}}
+
 <!DOCTYPE html>
+<html lang="en">
 <head>
-<title></title>
-<style>
-html, body {
-	height: 100%;
-}
-
-body {
-	font-family: verdana, sans-serif;
-	font-size: 1.5em;
-	background: linear-gradient({{favColor}}, #fff);
-	text-align: center;
-	line-height: 1.5;
-}
-
-form {
-	margin: auto;
-}
-
-select, input {
-	font-size: 1em;
-}
-
-section {
-	margin-top: 0.5em;
-}
-
-textarea {
-	font-family: Courier, monospace;
-	font-size: 0.65em;
-	width: 65%;
-	height: 65%;
-}
-
-nav {
-	margin-bottom: 1em;
-	font-weight: bold;
-}
-</style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cookied - Ishan Pranav</title>
+    <link rel="stylesheet" type="text/css" href="styles/layout.css" />
 </head>
-<body>
-	<nav><a href="/">Session Data</a> | <a href="/preferences">Preferences</a></nav>
-	{{{body}}}
+<body style="background: linear-gradient({{ favColor }}, white)">
+    <nav>
+        <a href="/">Session Data</a>
+        <span>|</span>
+        <a href="/preferences">Preferences</a>
+    </nav>
+    {{{ body }}}
 </body>
-</head>
 </html>
