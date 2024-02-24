@@ -8,8 +8,7 @@ import { fileURLToPath } from 'url';
 import { colorOptions } from './colors.mjs';
 import { parseCookies, manageSession } from './cookied.mjs';
 
-const rootDirectory = dirname(fileURLToPath(import.meta.url));
-const publicPath = resolve(rootDirectory, 'public');
+const publicPath = resolve(dirname(fileURLToPath(import.meta.url)), 'public');
 
 express()
     .use(express.static(publicPath))

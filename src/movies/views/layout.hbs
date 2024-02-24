@@ -8,8 +8,58 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Movies - Ishan Pranav</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 </head>
 <body>
-    {{{ body }}}
+    <header class="py-3 mb-3 border-bottom">
+        <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
+            <a 
+                href="#"
+                class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+                <img 
+                    class="bi me-2" 
+                    src="images/logo.png"
+                    alt="A clapperboard."
+                    width="32" 
+                    height="32" />
+            </a>
+            <div class="d-flex align-items-center">
+                <form class="w-100 me-3" role="search">
+                    <input
+                        type="search"
+                        class="form-control"
+                        placeholder="Search..."/>
+                </form>
+                <div class="flex-shrink-0">
+                    <a href="https://github.com/ishanpranav"
+                       class="d-block link-body-emphasis text-decoration-none">
+                        <img
+                            src="https://github.com/ishanpranav.png"
+                            alt="ishanpranav"
+                            width="32"
+                            height="32"
+                            class="rounded-circle"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="col-lg-8 mx-auto p-4 py-md-5">
+        <main>{{{ body }}}</main>
+        <footer class="pt-5 my-5 text-body-secondary border-top small">
+            <span>Copyright &copy; 2024 Ishan Pranav</span>
+            <br/>
+            <span>Licensed under the MIT license.</span>
+            <br/>
+            <span>The logo for this project was designed by </span>
+            <a
+                href="https://www.flaticon.com/free-icons/cinema"
+                target="_blank">
+                Freepik on Flaticon.</a>
+            <span>Layouts and styles were provided by </span>
+            <a href="(https://getbootstrap.com" target="_blank">Bootstrap.</a>
+        </footer>
+    </div>
 </body>
 </html>

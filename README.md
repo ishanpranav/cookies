@@ -19,3 +19,9 @@ This is a database application used to store a list of movies.
 # License
 
 This repository is licensed with the [MIT](LICENSE.txt) license.
+
+# Attribution
+
+The logo for this project was designed by
+[Freepik on Flaticon](https://www.flaticon.com/free-icons/cinema). Layouts and
+styles were provided by [Bootstrap](https://getbootstrap.com).
