@@ -3,19 +3,19 @@
 {{!-- Licensed under the MIT License. --}}
 
 {{#if director}}
-    <div class="pb-3 text-body-secondary border-bottom small">
-        {{#unless foundData.length}}
-        <span>No results for movies directed by {{ director }}.</span>
-        {{/unless}}
+<div class="pb-3 text-body-secondary border-bottom small">
+    {{#unless foundData.length}}
+    <span>No results for movies directed by {{ director }}.</span>
+    {{/unless}}
 
-        {{#if foundData.length}}
-        <span>Showing only movies directed by {{ director }}.</span>
-        {{/if}}
+    {{#if foundData.length}}
+    <span>Showing only movies directed by {{ director }}.</span>
+    {{/if}}
 
-        <span>Click</span>
-        <a class="text-decoration-none" href="/movies">here</a>
-        <span>to show all movies.</span>
-    </div>
+    <span>Click</span>
+    <a class="text-decoration-none" href="/movies">here</a>
+    <span>to show all movies.</span>
+</div>
 {{/if}}
 
 {{#if foundData.length}}
@@ -38,3 +38,9 @@
     </tbody>
 </table>
 {{/if}}
+
+<div class="pt-3 text-body-secondary small">
+<span>Didn't find what you're looking for? Click</span>
+<a class="text-decoration-none" href="/movies-add">here</a>
+</span>to add a movie.</span>
+</div>

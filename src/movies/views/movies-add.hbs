@@ -1,0 +1,47 @@
+{{!-- movies-add.hbs --}}
+{{!-- Copyright (c) 2024 Ishan Pranav --}}
+{{!-- Licensed under the MIT License. --}}
+
+<h3 class="h3 mb-3">Add a new movie</h3>
+<form method="post">
+    <div class="row">
+        <div class="col-sm">
+            <div class="form-floating mb-3">
+            <input 
+                type="text" 
+                id="titleInput" 
+                name="title" 
+                class="form-control" 
+                placeholder="Title" />
+            <label for="titleInput">Title</label></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <div class="form-floating mb-3">
+                <input 
+                    type="number" 
+                    id="yearInput" 
+                    name="year" 
+                    class="form-control" 
+                    placeholder="Year" 
+                    min="1889"
+                    max="{{ year }}" 
+                    value="{{ year }}" />
+                <label for="yearInput">Year</label>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="form-floating mb-3">
+                <input 
+                    type="text" 
+                    id="directorInput" 
+                    name="director" 
+                    class="form-control" 
+                    placeholder="Director" />
+                <label for="yearInput">Director</label>
+            </div>
+        </div>
+    </div>
+    <input type="submit" class="btn btn-primary" />
+</form>
