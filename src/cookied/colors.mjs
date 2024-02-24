@@ -1,5 +1,6 @@
 // Licensed under the MIT license.
 
+/** Specifies the custom color options. */
 export const colorOptions = [
     {
         name: 'wintery white',

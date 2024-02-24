@@ -8,7 +8,14 @@ import { v4 } from 'uuid';
 
 const sessions = {};
 
-export function parseCookies(request, _, next) {
+/**
+ * Provides Express middleware for parsing the HTTP `Cookie` header.
+ * 
+ * @param {Request}  request  the HTTP request.
+ * @param {Response} response (unused) the HTTP response.
+ * @param {Function} next     the callback invoked after the middleware.
+ */
+export function parseCookies(request, response, next) {
     request.hwCookies = {};
 
     if (!request.headers.cookie) {
@@ -26,6 +33,13 @@ export function parseCookies(request, _, next) {
     next();
 }
 
+/**
+ * Provides Express middleware for managing user sessions.
+ *  
+ * @param {Request}  request  the HTTP request.
+ * @param {Response} response the HTTP response.
+ * @param {Function} next     the callback invoked after the middleware.
+ */
 export function manageSession(request, response, next) {
     request.hwSession = sessions[request.hwCookies.sessionId];
 
