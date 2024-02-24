@@ -1,0 +1,22 @@
+{{!-- movies.hbs --}}
+{{!-- Copyright (c) 2024 Ishan Pranav --}}
+{{!-- Licensed under the MIT License. --}}
+
+<table>
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>Title</th>
+            <th>Director</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each foundData}}
+        <tr>
+            <td>{{year}}</td>
+            <td>{{title}}</td>
+            <td>{{director}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

@@ -2,7 +2,21 @@
 // Copyright (c) 2024 Ishan Pranav
 // Licensed under the MIT license.
 
-import express from 'express';
-const app = express();
+import './config.mjs'; // first
 
-app.listen(process.env.PORT ?? 3000);
+import express from 'express';
+import { Movie } from './db.mjs';
+
+express()
+    .set('view engine', 'hbs')
+    .get('/movies', async (request, response) => {
+        try {
+            response.render('movies', {
+                foundData: await Movie.find()
+            });
+        } catch (ex) {
+            console.log(ex);
+            response.status(500).send();
+        }
+    })
+    .listen(process.env.PORT ?? 3000);
