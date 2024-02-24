@@ -82,7 +82,6 @@ app
     }))
     .get('/mymovies', (request, response) => {
         ensureSession(request.session);
-        console.log(request.session.added);
         response.render('movies', {
             added: true,
             foundData: request.session.added,
