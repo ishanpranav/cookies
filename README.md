@@ -4,15 +4,15 @@
 
 # Cookies
 
-This is a demonstration of cookies and sessions implemented in JavaScript for
-the NYU CSCI 467 Applied Internet Technology course.
+This is a demonstration of cookies, sessions, and databases implemented in
+JavaScript for the NYU CSCI 467 Applied Internet Technology course.
 
-## More colors
+## \"More colors\"
 
 This is a simple two-page Express demo application that uses cookies to store
 session information.
 
-## Let\'s watch some movies
+## \"Let\'s watch some movies\"
 
 This is a database application used to store a list of movies.
 
