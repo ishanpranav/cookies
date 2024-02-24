@@ -2,27 +2,25 @@
 // Copyright (c) 2024 Ishan Pranav
 // Licensed under the MIT license.
 
-const colorOptions = [
+export const colorOptions = [
     {
-        name:'wintery white', 
-        hex:'#fff', 
+        name: 'wintery white',
+        hex: '#ffffff',
         selected: false
     },
     {
-        name:'plausible pink', 
-        hex:'#ffaabb', 
+        name: 'plausible pink',
+        hex: '#ffaabb',
         selected: false
     },
     {
-        name:'yucky yellow', 
-        hex:'#ffff33', 
+        name: 'yucky yellow',
+        hex: '#ffff33',
         selected: false
     },
     {
-        name:'garish green', 
-        hex:'#55cc44', 
+        name: 'garish green',
+        hex: '#55cc44',
         selected: false
     }
 ];
-
-export default colorOptions;
