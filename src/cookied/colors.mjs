@@ -4,7 +4,7 @@
 export const colorOptions = [
     {
         name: 'wintery white',
-        hex: '#ffffff',
+        hex: '#fff',
         selected: false
     },
     {

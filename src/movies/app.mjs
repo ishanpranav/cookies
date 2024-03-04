@@ -76,7 +76,7 @@ app
             response.status(500).send();
         }
     })
-    .get('/movies-add', (_, response) => response.render('movies-add', {
+    .get('/movies/add', (_, response) => response.render('movies-add', {
         useFallbackStyles: useFallbackStyles,
         year: new Date().getFullYear()
     }))
@@ -88,7 +88,7 @@ app
             useFallbackStyles: useFallbackStyles
         });
     })
-    .post('/movies-add', async (request, response) => {
+    .post('/movies/add', async (request, response) => {
         const obj = {
             title: request.body.title,
             year: request.body.year,
