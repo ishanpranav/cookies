@@ -24,7 +24,7 @@ const publicPath = resolve(rootDirectory, 'public');
 const app = express();
 
 let secret = process.env.SECRET;
-let useFallbackStyles = false;
+let useFallbackStyles;
 
 try {
     await access(bootstrapDistDirectory);

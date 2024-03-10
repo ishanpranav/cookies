@@ -16,6 +16,10 @@ session information.
 
 This is a database application used to store a list of movies.
 
+## Screenshots
+
+![Screenshot of the Movies web application.](docs/images/Capture.png "Movies web application")
+
 ## License
 
 This repository is licensed with the [MIT](LICENSE.txt) license.
